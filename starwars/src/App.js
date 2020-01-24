@@ -14,9 +14,9 @@ function App(){
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div className="logo_container">
+      <div className="container">
       <SWGrid/>
-      </div>
+     </div>
     </div>
   );
 }

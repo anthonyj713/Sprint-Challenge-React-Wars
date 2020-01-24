@@ -9,7 +9,7 @@ import {
 
   const SWCard = ({people}) => {
       return (
-        <Col xs="6" md="4" xl="3">
+        <Col xs="12" md="6" xl="6">
         <Card>
           <CardHeader> {people.name}</CardHeader>
           <CardBody>
