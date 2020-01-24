@@ -1,19 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
-import axios from "axios";
+import SWGrid from './components/SWGrid';
 
-const App = () => {
-  const [data, setData] = useState([]);
-    useEffect(() => {
-      axios.get("https://swapi.co/api/people/")
-      .then(res => {
-        console.log(res.data);
-        setData(res.data);
-      })
-      .catch(error => {
-        console.log("the data was not returned", error)
-      })
-    },[])
+
+function App(){
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -24,6 +14,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <div className="logo_container">
+      <SWGrid/>
+      </div>
     </div>
   );
 }
